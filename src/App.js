@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-     <img src={process.env.PUBLIC_URL + '/hieu.png'}  width='400px' height='400px' className={className} onAnimationEndCapture={()=>{setclassName('stay')
+     <img src={process.env.PUBLIC_URL + '/hieu.png'}  height='30vmin' className={className} onAnimationEndCapture={()=>{setclassName('stay')
      audio1.pause();
      audio.play();
     }} style={{left : 100, marginTop: -400}}/>
 
-     <img src={process.env.PUBLIC_URL + '/ha.png'}  width='400px' height='400px'  className={className} onAnimationEndCapture={()=>{setclassName('stay')
+     <img src={process.env.PUBLIC_URL + '/ha.png'}  height='30vmin'  className={className} onAnimationEndCapture={()=>{setclassName('stay')
     }} style={{right : 100, marginTop: -400}}/>
 
         <div><img src={process.env.PUBLIC_URL + '/bob.png'} className="App-logo" alt="logo" />
