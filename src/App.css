@@ -3,20 +3,37 @@
 }
 
 .App-logo {
-  max-height: 40vmin;
+  max-height: 30vmin;
   pointer-events: none;
 }
-.App-logo2 {
-  
-  pointer-events: none;
+.dropping{
+  position:fixed;
+  top: 0;
+  margin-top: -50;
+  display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo, .App-logo2 {
     animation: App-logo-spin infinite 20s linear;
   }
-  
+  .dropping{
+    animation: imgdrop 5s linear;
+  }
 }
+.stay{
+  position:fixed;
+  top: 60%;
+  display: block;
+}
+
+.randomImg{
+  position:fixed;
+  top: 0;
+  margin-top: -50;
+  display: block;
+}
+
 
 .App-header {
   background: rgb(210,22,142);
@@ -41,4 +58,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes imgdrop {
+  from {
+    bottom: 0%
+  }
+  to {
+    top: 60%;
+  }
+}
+
+
+.button{
+	width: 50px;
+	height: 50px;
+
+  position: relative;
+
+
+	border-radius: 5px;
+	background: none;
+	cursor: pointer;
+}
+
+#heart {
+    width: 100px;
+    height: 90px;
+
+}
+#heart:before,
+#heart:after {
+	transition: background 0.5s ease;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
 }
