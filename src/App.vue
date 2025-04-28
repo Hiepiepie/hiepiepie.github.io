@@ -6,9 +6,7 @@ import { ref } from 'vue';
 
 // Mock authentication state - in a real app this would come from a store
 const isLoggedIn = ref(Cookies.get('isLoggedIn') === 'true');
-if (!isLoggedIn.value) {
-  window.location.href = '/login';
-}
+
 const logout = () => {
   // In a real app, this would call an authentication service
   isLoggedIn.value = false;
@@ -19,7 +17,7 @@ const logout = () => {
 </script>
 
 <template>
-  <NavBar :is-logged-in="isLoggedIn" :logout="logout"/>
+  <NavBar :is-logged-in="true" :logout="logout"/>
   <RouterView class="pt-7"/>
 </template>
 
