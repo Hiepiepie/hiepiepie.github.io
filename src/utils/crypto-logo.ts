@@ -1,0 +1,12 @@
+export const bitcoinLogo = '/images/crypto/bitcoin_logo.svg';
+export const ethereumLogo = '/images/crypto/ethereum_logo.svg';
+export const solanaLogo = '/images/crypto/solana_logo.svg';
+export const cardanoLogo = '/images/crypto/cardano_logo.svg';
+export const dogecoinLogo = '/images/crypto/dogecoin_logo.svg';
+export const polkadotLogo = '/images/crypto/polkadot-logo.svg';
+export const usdtLogo = '/images/crypto/usdt_logo.svg';
+export const usdcLogo = '/images/crypto/usdc_logo.svg';
+export const xrpLogo = '/images/crypto/xrp_logo.svg';
+export const polygonLogo = '/images/crypto/polygon_logo.svg';
+export const bnbLogo = '/images/crypto/bnb_logo.svg';
+export const arbitrumLogo = '/images/crypto/arbitrum_logo.svg';
